@@ -1,4 +1,3 @@
-```javascript
 // ===============================
 // ANIMATION DES SECTIONS
 // ===============================
@@ -200,4 +199,4 @@ document.addEventListener("keydown",(e)=>{
     }
 
 });
-```
+
