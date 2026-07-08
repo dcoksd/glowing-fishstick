@@ -1,242 +1,250 @@
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nom du Groupe - RAP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nom du Groupe | RAP</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,Helvetica,sans-serif;
-}
+    <link rel="stylesheet" href="style.css">
 
-body{
-    background:#111;
-    color:#fff;
-    line-height:1.6;
-}
-
-header{
-    height:100vh;
-    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),
-    url("https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1600&q=80");
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-}
-
-header h1{
-    font-size:70px;
-    letter-spacing:5px;
-}
-
-header p{
-    font-size:22px;
-    color:#ddd;
-    margin:20px 0;
-}
-
-.btn{
-    display:inline-block;
-    padding:15px 35px;
-    background:#ff003c;
-    color:white;
-    text-decoration:none;
-    border-radius:30px;
-    transition:.3s;
-}
-
-.btn:hover{
-    background:#fff;
-    color:#111;
-}
-
-section{
-    max-width:1100px;
-    margin:auto;
-    padding:80px 20px;
-}
-
-h2{
-    text-align:center;
-    margin-bottom:40px;
-    color:#ff003c;
-    font-size:36px;
-}
-
-.about{
-    text-align:center;
-    font-size:18px;
-}
-
-.members{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:#1b1b1b;
-    border-radius:15px;
-    padding:25px;
-    text-align:center;
-}
-
-.card img{
-    width:150px;
-    height:150px;
-    object-fit:cover;
-    border-radius:50%;
-    margin-bottom:15px;
-}
-
-.music{
-    display:grid;
-    gap:20px;
-}
-
-.track{
-    background:#1b1b1b;
-    padding:20px;
-    border-left:5px solid #ff003c;
-}
-
-.social{
-    text-align:center;
-}
-
-.social a{
-    color:white;
-    text-decoration:none;
-    margin:10px;
-    font-size:20px;
-}
-
-.social a:hover{
-    color:#ff003c;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    background:#000;
-    color:#777;
-}
-
-</style>
-
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<header>
-<div>
-<h1>NOM DU GROUPE</h1>
-<p>Le rap est notre voix. Les mots sont nos armes.</p>
+<header id="home">
 
-<a href="#music" class="btn">Écouter nos sons</a>
-</div>
+    <nav>
+
+        <div class="logo">
+            NOM DU GROUPE
+        </div>
+
+        <ul>
+
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#members">Artistes</a></li>
+            <li><a href="#music">Musique</a></li>
+            <li><a href="#videos">Clips</a></li>
+            <li><a href="#gallery">Galerie</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <div class="hero">
+
+        <h1>NOM DU GROUPE</h1>
+
+        <p>
+            La rue nous inspire. La musique nous rassemble.
+        </p>
+
+        <a href="#music" class="btn">
+            Découvrir nos sons
+        </a>
+
+    </div>
+
 </header>
 
-<section>
-<h2>À propos</h2>
+<!-- ========================= -->
 
-<p class="about">
-Remplace ce texte par la présentation de ton groupe.
-Explique votre univers, vos inspirations, votre ville et votre parcours.
-</p>
-</section>
+<section id="about" class="reveal">
 
-<section>
+    <h2>À propos</h2>
 
-<h2>Les membres</h2>
-
-<div class="members">
-
-<div class="card">
-    <img src="travis.jpg" alt="Travis Scott">
-    <h3>Travis Scott</h3>
-    <p>Rappeur</p>
-</div>
-
-<div class="card">
-    <img src="pnl.webp" alt="PNL">
-    <h3>PNL</h3>
-    <p>Duo de rap français</p>
-</div>
-
-<div class="card">
-<img src="https://via.placeholder.com/150" alt="">
-<h3>DJ Nova</h3>
-<p>Beatmaker</p>
-</div>
-
-</div>
+    <p>
+        Remplace ce texte par la présentation de ton groupe.
+        Explique votre histoire, votre univers, vos influences et vos projets.
+    </p>
 
 </section>
 
-<section id="music">
+<!-- ========================= -->
 
-<h2>Nos morceaux</h2>
+<section id="members" class="reveal">
 
-<div class="music">
+    <h2>Les Artistes</h2>
 
-<div class="track">
-<h3>🎵 Titre 1</h3>
-<p>Disponible sur Spotify, Deezer et YouTube.</p>
-</div>
+    <div class="members">
 
-<div class="track">
-<h3>🎵 Titre 2</h3>
-<p>Disponible sur toutes les plateformes.</p>
-</div>
+        <article class="card">
 
-<div class="track">
-<h3>🎵 Titre 3</h3>
-<p>Nouveau clip disponible.</p>
-</div>
+            <img src="travis.jpg" alt="Travis Scott">
 
-</div>
+            <h3>Travis Scott</h3>
+
+            <span>Rappeur</span>
+
+            <p>
+                Présentation de l'artiste.
+            </p>
+
+        </article>
+
+        <article class="card">
+
+            <img src="pnl.webp" alt="PNL">
+
+            <h3>PNL</h3>
+
+            <span>Duo</span>
+
+            <p>
+                Présentation du groupe.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+
+<section id="music" class="reveal">
+
+    <h2>Notre Musique</h2>
+
+    <div class="tracks">
+
+        <div class="track">
+
+            <h3>Dernier morceau</h3>
+
+            <audio controls>
+
+                <source src="musique.mp3" type="audio/mpeg">
+
+            </audio>
+
+        </div>
+
+        <div class="track">
+
+            <h3>Spotify</h3>
+
+            <p>
+                Intègre ici un lecteur Spotify si tu le souhaites.
+            </p>
+
+        </div>
+
+    </div>
 
 </section>
 
-<section>
+<!-- ========================= -->
 
-<h2>Suivez-nous</h2>
+<section id="videos" class="reveal">
 
-<div class="social">
-<a href="#">Instagram</a>
-<a href="#">TikTok</a>
-<a href="#">YouTube</a>
-<a href="#">Spotify</a>
-</div>
+    <h2>Clips</h2>
+
+    <div class="videos">
+
+        <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID_1"
+            title="Clip 1"
+            allowfullscreen>
+        </iframe>
+
+        <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID_2"
+            title="Clip 2"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+
+<section id="gallery" class="reveal">
+
+    <h2>Galerie</h2>
+
+    <div class="gallery">
+
+        <img src="travis.jpg" alt="">
+        <img src="pnl.webp" alt="">
+        <img src="travis.jpg" alt="">
+        <img src="pnl.webp" alt="">
+        <img src="travis.jpg" alt="">
+        <img src="pnl.webp" alt="">
+
+    </div>
 
 </section>
 
-<section>
+<!-- ========================= -->
 
-<h2>Contact</h2>
+<section id="contact" class="reveal">
 
-<div class="about">
+    <h2>Contact</h2>
 
-<p>Email : contact@votregroupe.fr</p>
+    <div class="contact">
 
-<p>Booking : +33 6 00 00 00 00</p>
+        <div>
 
-</div>
+            <h3>Booking</h3>
+
+            <p>booking@grouperap.fr</p>
+
+        </div>
+
+        <div>
+
+            <h3>Email</h3>
+
+            <p>contact@grouperap.fr</p>
+
+        </div>
+
+        <div>
+
+            <h3>Instagram</h3>
+
+            <a href="#">
+                @nomdugroupe
+            </a>
+
+        </div>
+
+        <div>
+
+            <h3>YouTube</h3>
+
+            <a href="#">
+                Notre chaîne
+            </a>
+
+        </div>
+
+    </div>
 
 </section>
+
+<!-- ========================= -->
 
 <footer>
 
-© 2026 NOM DU GROUPE - Tous droits réservés.
+    <p>
+
+        © 2026 NOM DU GROUPE
+
+    </p>
 
 </footer>
 
+<script src="script.js"></script>
+
 </body>
 </html>
+```
